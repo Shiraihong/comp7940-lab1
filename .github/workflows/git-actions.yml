@@ -13,3 +13,8 @@ jobs:
         run: |
           echo 'Viewing the file: '
           cat requirements.txt
+          
+      - name: Security vulnerabilities scan
+        uses: aufdenpunkt/python-safety-check@master
+        with:
+          scan_chatbot_file_only: 'true'
