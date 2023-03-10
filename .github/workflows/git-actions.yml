@@ -3,7 +3,7 @@ on: [push]
 
       
 env:
-  DEP_PATH: /chatbot.py
+  DEP_PATH: /requirements.txt
   
 jobs:
   my-helloworld-job:
