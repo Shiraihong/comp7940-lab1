@@ -1,10 +1,5 @@
 name: my-actions
-on:
-  push:
-    branches:
-      - main
-
-
+on:[push]
 
 jobs:
   my-helloworld-job:
@@ -21,4 +16,4 @@ jobs:
           cat requirements.txt
           
       - name: Scan
-        uses: aufdenpunkt/python-safety-check@main
+        uses: aufdenpunkt/python-safety-check
