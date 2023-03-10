@@ -2,7 +2,7 @@ name: my-actions
 on: [push]
 
 env:
-  DEP_PATH: chatbot.py
+  DEP_PATH: src/chatbot.py
 
 jobs:
   my-helloworld-job:
