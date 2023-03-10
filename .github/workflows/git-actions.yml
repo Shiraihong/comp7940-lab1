@@ -1,5 +1,9 @@
 name: my-actions
 on: [push]
+
+env:
+  DEP_PATH: chatbot.py
+
 jobs:
   my-helloworld-job:
     runs-on: ubuntu-latest
@@ -16,5 +20,3 @@ jobs:
           
       - name: Security vulnerabilities scan
         uses: aufdenpunkt/python-safety-check@master
-        with:
-          scan_chatbot.py: 'true'
