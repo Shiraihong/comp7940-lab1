@@ -2,7 +2,7 @@ name: my-actions
 on:
   push:
     branches:
-      - master
+      - main
 
 
 
@@ -21,4 +21,4 @@ jobs:
           cat requirements.txt
           
       - name: Scan
-        uses: aufdenpunkt/python-safety-check@master
+        uses: aufdenpunkt/python-safety-check@main
