@@ -1,5 +1,8 @@
 name: my-actions
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 
 
@@ -17,5 +20,5 @@ jobs:
           echo 'Viewing the file: '
           cat requirements.txt
           
-      - name: Security vulnerabilities scan
+      - name: Scan
         uses: aufdenpunkt/python-safety-check@master
