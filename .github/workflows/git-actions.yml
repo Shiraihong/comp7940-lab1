@@ -17,4 +17,4 @@ jobs:
       - name: Security vulnerabilities scan
         uses: aufdenpunkt/python-safety-check@master
         with:
-          scan_chatbot_file_only: 'true'
+          scan_chatbot.py: 'true'
