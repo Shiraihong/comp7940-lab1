@@ -2,7 +2,7 @@ name: my-actions
 on: 
   push:
     branches:
-      - master  
+      - main
 jobs:
   my-helloworld-job:
     runs-on: ubuntu-latest
